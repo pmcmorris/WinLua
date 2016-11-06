@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F9AFDB07-E32C-4D7E-B860-1CC1C78A9918}</ProjectGuid>
+    <ProjectGuid>{764914DD-AF95-480B-B482-E25733A7AE43}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>lua</RootNamespace>
+    <RootNamespace>luac</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,12 +150,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\lua-5.3.3\src\lua.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\lualib\lualib.vcxproj">
       <Project>{894ca772-f09f-427a-a8ca-76a111d55970}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lua-5.3.3\src\luac.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
